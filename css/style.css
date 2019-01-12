@@ -36,6 +36,17 @@ input {
   margin-bottom:10px;
 }
 
+#main .container {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-gap: 20px;
+  justify-content: center;
+}
+
+aside#sidebar {
+  margin-top: 10px;
+}
+
 /* HEADER */
 header .container {
   display: grid;
@@ -148,7 +159,9 @@ footer {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 768px) {
-  header .container {
+  header .container,
+  #newsletter .container,
+  #main .container {
     grid-template-columns: 1fr;
   }
 
@@ -156,10 +169,6 @@ footer {
   header nav {
     margin-top: 10px;
     padding: 0;
-  }
-
-  #newsletter .container {
-    grid-template-columns: 1fr;
   }
 
   #newsletter h1 {
@@ -188,12 +197,20 @@ footer {
     grid-template-columns: 1fr;
     max-width: 60%;
   }
+
+  #main .container {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 375px) {
   header li {
     display: block;
     padding: 5px;
+  }
+
+  #main .container {
+    width: 90%;
   }
 }
 
