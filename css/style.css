@@ -28,6 +28,11 @@ input {
   color:#ffffff;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .dark{
   padding:15px;
   background:#35424a;
@@ -38,13 +43,9 @@ input {
 
 #main .container {
   display: grid;
-  grid-template-columns: 40% 40%;
-  grid-gap: 20px;
+  grid-template-columns: 45% 45%;
+  grid-gap: 40px;
   justify-content: center;
-}
-
-aside#sidebar {
-  margin-top: 10px;
 }
 
 /* HEADER */
@@ -71,11 +72,6 @@ header .current a {
 
 header nav {
   margin-top: 44px;
-}
-
-header ul {
-  margin: 0;
-  padding: 0;
 }
 
 header a {
@@ -145,6 +141,26 @@ header a:hover {
 
 .box {
   padding: 10px;
+}
+
+/* SIDEBAR */
+aside#sidebar {
+  margin-top: 10px;
+}
+
+aside#sidebar textarea {
+  padding: 4px;
+  width: 250px;
+  height: 80px;
+}
+
+/* SERVICES */
+ul#services li {
+  list-style-type: none;
+  background: #e6e6e6;
+  padding: 20px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
 }
 
 /* FOOTER */
